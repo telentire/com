@@ -1,0 +1,288 @@
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Tooling wala-OEE calculator</title>
+   <meta content="tooling wala is supplier of cnc cutting tools pan india distributor. we serve north India specially delhi, greater noida, faridabad and punjab." name="description">
+  <meta content="cutting speed calculation,oee calculator, rpm calculator,cnc tooling,vmc tooling, cutting tools, cnc inserts, dnmg, cnmg, ccmt, vnmg" name="keywords">
+
+  <!-- Favicons -->
+
+  <!--OEE css file-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <script type="text/javascript" src="Company\assets\js\main.js"></script>
+  <!-- Favicons -->
+  <link href="img/favicon.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="vendor/aos/aos.css" rel="stylesheet">
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Company - 4.8.0
+  * Template URL: https://toolingwala.com/company-free-html-template/
+  * Author: toolingwala.com
+  * License: https://toolingwala.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center">
+
+      <h1 class="logo me-auto"><a href="index.html"><span>TOOLING-</span>WALA</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+
+          <li class="dropdown"><a href="#"><span>About</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="team.html">Team</a></li>
+              <li><a href="testimonials.html">Testimonials</a></li>
+              <li class="dropdown"><a href="#"><span>Calculator</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="#">Cutting Speed Calc</a></li>
+                  <li><a href="#">RPM Calc</a></li>
+                  <li><a href="oeecalc.html">OEE Calc</a></li>
+                  <li><a href="cycletimecalc.html">Cycle Time Calc</a></li>
+                  <li><a href="#">Tap Drill Size Calc</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+
+          <li><a href="services.html">Services</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+      <div class="header-social-links d-flex">
+        <a href="https://www.youtube.com/channel/UCYNKajWrOKpFt3_6-idrlyQ" class="twitter"><i class="bu bi-twitter"></i></a>
+        <a href="https://www.youtube.com/channel/UCYNKajWrOKpFt3_6-idrlyQ" class="youtube"><i class="bu bi-youtube"></i></a>
+        <a href="https://www.youtube.com/channel/UCYNKajWrOKpFt3_6-idrlyQ" class="instagram"><i class="bu bi-instagram"></i></a>
+        <a href="https://www.youtube.com/channel/UCYNKajWrOKpFt3_6-idrlyQ" class="linkedin"><i class="bu bi-linkedin"></i></i></a>
+      </div>
+
+    </div>
+  </header><!-- End Header -->
+
+<!-- Start OEE calculator  -->
+<br><br><br>
+<body style="background-color:#DADA !important">
+    
+    <div class="container fw-bold">
+        <div class="row"> 
+            <div class="c01-8 m-auto bg-dark text-white p-4">
+            <h4 class="text-center">OEE Calculator for Industry 
+            </h4> 
+        </div>
+    </div>
+    
+    
+    <div class="row">
+    <div class="col-lg-8 col-md-12 bg-white p-5 m-auto d-flex justify-content-around align-items-xl-start">
+        <div class="col-md-4">
+            <div>
+                
+                <div class="book1 mb-3">
+                    <label>Plan Time in Min</label>
+                    <input class="form-control" id="sftTime" type="number" name="" placeholder="480">
+                </div>
+                <div class="book2 mb-3">
+                    <label>Planned Downtime in min</label>
+                    <input class="form-control" id="pdtime" type="number" name="" placeholder="Lunch+Tea Break">
+                </div>
+                <div class="book3 mb-3">
+                    <label>Unplanned Downtime in min</label>
+                    <input class="form-control" id="upltime" type="number" name="" placeholder="breakdown+small stops">
+                </div>
+                <div class="book4 mb-3">
+                    <label>Cycle time in Min</label>
+                    <input class="form-control" id="ct" type="number" name="" placeholder="Runtime+Loading/Unlaoding time">
+                </div>
+                <div class="book5 mb-3">
+                    <label>Shift production in Pcs</label>
+                    <input class="form-control" id="prod" type="number" name="" placeholder="No of Parts Produced">
+                </div>
+                <div class="book6 mb-3">
+                    <label>Shift Rejection in Pcs</label>
+                    <input class="form-control" id="rej" type="number" name="" placeholder="Non Confirmed Parts">
+                </div>
+                <div>
+                    <button class="btn btn-warning col-12" onclick="calculate()">Calculate</button>
+                </div>
+            </div>
+                </div>
+            
+        </div>
+        <div class="col-md-4 d-flex align-items-center">
+            <div>
+                <table class="table table-bordered border-dark">
+                    <tr>
+                        <td>Parameters</td>
+                        <td>Results</td>
+                    </tr>
+                  <tr>
+                      <td>Run time</td>
+                      <td id="runtime"></td>
+                  </tr>
+                  <tr>
+                    <td>Good parts</td>
+                    <td id="gparts"></td>
+                </tr>
+                <tr>
+                    <td>Operator Efficiency</td>
+                    <td id="optefi"></td>
+                </tr>
+                <tr>
+                    <td>Availabilty</td>
+                    <td id="aval"></td>
+                </tr>
+                <tr>
+                    <td>Performance</td>
+                    <td id="perf"></td>
+                </tr>
+                <tr>
+                    <td>Quality</td>
+                    <td id="qlty"></td>
+                </tr>
+                <tr>
+                    <td>OEE</td>
+                    <td id="oee"></td>
+                </tr>
+                <tr>
+                    <td>Remarks</td>
+                    <td id="rmks"></td>
+                </tr>
+            </table>
+        </div>
+        
+        </div>
+    </div>
+    </div>
+            
+           </div>
+        <script type="text/javascript" src="assets\js\oee.js"></script>
+
+
+<!-- End OEE Calculator -->
+<!-- ======= Footer ======= -->
+<footer id="footer">
+
+  <div class="footer-top">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-lg-3 col-md-6 footer-contact">
+          <h3>TOOLING-WALA</h3>
+          <p>
+              Stellar Solutions <br>
+             A692 Shop No.6, Ali Vihar<br>
+              Sarita Vihar, New Delhi<br><br>
+              <strong>GSTIN:</strong>07AGRPR7697H1ZC<br>
+              <strong>Email:</strong> toolingswala@gmail.com<br>
+            </p>
+        </div>
+
+        <div class="col-lg-2 col-md-6 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-links">
+          <h4>Our Services</h4>
+          <ul>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">TPM Training</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">5S Implementation</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Product Development</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4 col-md-6 footer-newsletter">
+          <h4>Join Our Newsletter</h4>
+          <p>Stay update with new technology updates.</p>
+          <form action="" method="post">
+            <input type="email" name="email"><input type="submit" value="Subscribe">
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="container d-md-flex py-4">
+
+    <div class="me-md-auto text-center text-md-start">
+      <div class="copyright">
+        &copy; Copyright <strong><span>TOOLING-WALA</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+       
+        
+        <!-- Licensing information: https://toolingwala.com/license/ -->
+       
+        Designed by <a href="https://www.rmgtech.in/">RMGTECH</a>
+      </div>
+    </div>
+    <div class="social-links text-center text-md-right pt-3 pt-md-0">
+     <a href="https://www.youtube.com/channel/UCYNKajWrOKpFt3_6-idrlyQ" class="twitter"><i class="bu bi-twitter"></i></a>
+        <a href="https://www.youtube.com/channel/UCYNKajWrOKpFt3_6-idrlyQ" class="youtube"><i class="bu bi-youtube"></i></a>
+        <a href="https://www.youtube.com/channel/UCYNKajWrOKpFt3_6-idrlyQ" class="instagram"><i class="bu bi-instagram"></i></a>
+        <a href="https://www.youtube.com/channel/UCYNKajWrOKpFt3_6-idrlyQ" class="linkedin"><i class="bu bi-linkedin"></i></i></a>
+    </div>
+  </div>
+</footer><!-- End Footer -->
+
+<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+<!-- Vendor JS Files -->
+<script src="vendor/aos/aos.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="main.js"></script>
+ <script src="oee.js"></script>
+
+
+  </body>
+  </html>
